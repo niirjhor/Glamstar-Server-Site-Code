@@ -18,6 +18,7 @@ async function run() {
     try {
         await client.connect();
         console.log('connected to database');
+        console.log('connected to databases');
 
         const database = client.db('glamstar');
         const productsCollection = database.collection('products');
